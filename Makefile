@@ -20,6 +20,9 @@ ARCH= -gencode arch=compute_30,code=sm_30 \
 
 OS := $(shell uname)
 
+# Tesla K80
+ARCH= -gencode arch=compute_35,code=[sm_35,compute_35]
+
 # Tesla V100
 # ARCH= -gencode arch=compute_70,code=[sm_70,compute_70]
 
